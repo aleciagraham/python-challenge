@@ -1,39 +1,38 @@
-#PyBank
 
 import os
 import csv
 
-#setting a variable for csv file
-csvpath = file_to_load = os.path.join("..","Resources", "budget_data.csv")
+#set path
 
-with open("budget_data.csv") as financial_data:
+electiondata = os.path.join('..','Resources','election_data.csv')
 
-  csvreader = csv.reader(csvfile, delimiter=",")
-  
-  for row in csvreader:
-    months= str(row[0])
-    profitloss= int(row[1])
-  print(row[0])
+with open ('election_data.csv') as csvfile:
+    csvreder = csv.reader(electiondata, delimiter=',')
+#def financialdata(electiondata):
 
+#clarify csv headers
+voterid = int(electiondata[0])
+county = str(electiondata[1])
+candidate = str(electiondata[2])
+
+#The total number of votes cast
+totalvotes = int(sum([2]))
+print("Total number of votes:", totalvotes)
+
+
+  #* A complete list of candidates who received votes
  
-# of months
-total_months = int(len(months))
-print("The total number of months: ", (total_months))
+ #of occurances of the candidate on list
+occurances = occurances.Counter(candidate)
+return occurances
+print (occurances)
 
-#Net total amount of Profit and Loss
-netamount= int(sum([1)])
+  #* The percentage of votes each candidate won
+votepercentage = occurances/totalvotes
+retreturn (votepercentage)
+print(votepercentage)
+  #* The total number of votes each candidate won
 
-print("The net total is: $",(netmount))
+  #* The winner of the election based on popular vote.
 
-# average of profit and loss
-average = float(netamount/months)
-return avg
-print("Profit and Loss Average: $",(average))
-
-# The greatest increase
-greatest = max(row[1])
-print("The Greatest Increase:", row[0],greatest)
-
-# The lowest increase
-lowest = min(row[1)
-print("The Greatest Increase:",row([0], greatest)
+#* As an example, your analysis should look similar to the one below:
