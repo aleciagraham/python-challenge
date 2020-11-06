@@ -1,0 +1,1 @@
+(PythonData) aleciagraham@x86_64-apple-darwin13 PyBank % python main.pyThe total number of months:  86Total: $38382578Average Change:$ -2315.12The Greatest Increase in Profits: Feb-2012 $1926159The Lowest Decrease in Profits: Sep-2013 $-2196167(PythonData) aleciagraham@x86_64-apple-darwin13 PyBank % 
